@@ -1,0 +1,7 @@
+vallbona_web_homepage:
+    path:     /home
+    defaults: { _controller: VallbonaWebBundle:Default:index }
+
+vallbona_web_article:   
+    path:     /article
+    defaults: { _controller: VallbonaWebBundle:Default:article }
