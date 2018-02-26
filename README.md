@@ -1,4 +1,4 @@
-Symfony Standard Edition
+Symfony Standard Editionkjsdkfsdjafñks
 ========================
 
 **WARNING**: This distribution does not support Symfony 4. See the
