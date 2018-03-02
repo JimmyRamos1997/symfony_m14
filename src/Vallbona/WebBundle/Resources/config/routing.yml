@@ -5,3 +5,11 @@ vallbona_web_homepage:
 vallbona_web_article:   
     path:     /article
     defaults: { _controller: VallbonaWebBundle:Default:article }
+
+vallbona_web_form:   
+    path:     /form-user
+    defaults: { _controller: VallbonaWebBundle:Formulari:index }
+
+vallbona_web_createform:   
+    path:     /create-user
+    defaults: { _controller: VallbonaWebBundle:Formulari:create }

@@ -14,5 +14,5 @@ class DefaultController extends Controller
      public function articleAction()
     {
         return $this->render('VallbonaWebBundle:Default:article.html.twig');
-    }
+    }    
 }

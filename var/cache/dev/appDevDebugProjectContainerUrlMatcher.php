@@ -114,6 +114,16 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'Vallbona\\WebBundle\\Controller\\DefaultController::articleAction',  '_route' => 'vallbona_web_article',);
         }
 
+        // vallbona_web_form
+        if ('/form-user' === $pathinfo) {
+            return array (  '_controller' => 'Vallbona\\WebBundle\\Controller\\FormulariController::indexAction',  '_route' => 'vallbona_web_form',);
+        }
+
+        // vallbona_web_createform
+        if ('/create-user' === $pathinfo) {
+            return array (  '_controller' => 'Vallbona\\WebBundle\\Controller\\FormulariController::createAction',  '_route' => 'vallbona_web_createform',);
+        }
+
         // homepage
         if ('' === $trimmedPathinfo) {
             $ret = array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);

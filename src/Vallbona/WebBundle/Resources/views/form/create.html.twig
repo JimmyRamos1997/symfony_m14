@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+{{form_start(form, {'action':'', 'method':'POST'})}} {{form_end(form)}}
+
+{% for item in data %}
+<p>{{ item }}</p>
+{% endfor %}
+</body>
+</html>
