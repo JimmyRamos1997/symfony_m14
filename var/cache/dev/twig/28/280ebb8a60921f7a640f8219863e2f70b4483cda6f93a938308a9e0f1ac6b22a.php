@@ -15,20 +15,20 @@ class __TwigTemplate_4c0babef0bf21f42aa8b6468360f99dc9cddf485de8546ece37a2d297ab
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_be645184e5e5ea15d4ea98765b72ec5ffaf38d5cb1f443380badbb7196d197a5 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_be645184e5e5ea15d4ea98765b72ec5ffaf38d5cb1f443380badbb7196d197a5->enter($__internal_be645184e5e5ea15d4ea98765b72ec5ffaf38d5cb1f443380badbb7196d197a5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/images/icon-minus-square-o.svg"));
+        $__internal_58fd103199129fa70f6eb21b40d5d8f5b5d2e8155c17bf4382ec092a7ebc501d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_58fd103199129fa70f6eb21b40d5d8f5b5d2e8155c17bf4382ec092a7ebc501d->enter($__internal_58fd103199129fa70f6eb21b40d5d8f5b5d2e8155c17bf4382ec092a7ebc501d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/images/icon-minus-square-o.svg"));
 
-        $__internal_1e675fa04823f49dc4cf660bba3a2c12b7329ad6239d0549c235b93abd31ea0f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_1e675fa04823f49dc4cf660bba3a2c12b7329ad6239d0549c235b93abd31ea0f->enter($__internal_1e675fa04823f49dc4cf660bba3a2c12b7329ad6239d0549c235b93abd31ea0f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/images/icon-minus-square-o.svg"));
+        $__internal_bdbb0ad58c71a5f73992fefc84d67a39e296bac15491f35d85111b0764450b90 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_bdbb0ad58c71a5f73992fefc84d67a39e296bac15491f35d85111b0764450b90->enter($__internal_bdbb0ad58c71a5f73992fefc84d67a39e296bac15491f35d85111b0764450b90_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/images/icon-minus-square-o.svg"));
 
         // line 1
         echo "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M1344 800v64q0 14-9 23t-23 9H480q-14 0-23-9t-9-23v-64q0-14 9-23t23-9h832q14 0 23 9t9 23zm128 448V416q0-66-47-113t-113-47H480q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113zm128-832v832q0 119-84.5 203.5T1312 1536H480q-119 0-203.5-84.5T192 1248V416q0-119 84.5-203.5T480 128h832q119 0 203.5 84.5T1600 416z\"/></svg>
 ";
         
-        $__internal_be645184e5e5ea15d4ea98765b72ec5ffaf38d5cb1f443380badbb7196d197a5->leave($__internal_be645184e5e5ea15d4ea98765b72ec5ffaf38d5cb1f443380badbb7196d197a5_prof);
+        $__internal_58fd103199129fa70f6eb21b40d5d8f5b5d2e8155c17bf4382ec092a7ebc501d->leave($__internal_58fd103199129fa70f6eb21b40d5d8f5b5d2e8155c17bf4382ec092a7ebc501d_prof);
 
         
-        $__internal_1e675fa04823f49dc4cf660bba3a2c12b7329ad6239d0549c235b93abd31ea0f->leave($__internal_1e675fa04823f49dc4cf660bba3a2c12b7329ad6239d0549c235b93abd31ea0f_prof);
+        $__internal_bdbb0ad58c71a5f73992fefc84d67a39e296bac15491f35d85111b0764450b90->leave($__internal_bdbb0ad58c71a5f73992fefc84d67a39e296bac15491f35d85111b0764450b90_prof);
 
     }
 
@@ -53,6 +53,6 @@ class __TwigTemplate_4c0babef0bf21f42aa8b6468360f99dc9cddf485de8546ece37a2d297ab
     public function getSourceContext()
     {
         return new Twig_Source("<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M1344 800v64q0 14-9 23t-23 9H480q-14 0-23-9t-9-23v-64q0-14 9-23t23-9h832q14 0 23 9t9 23zm128 448V416q0-66-47-113t-113-47H480q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113zm128-832v832q0 119-84.5 203.5T1312 1536H480q-119 0-203.5-84.5T192 1248V416q0-119 84.5-203.5T480 128h832q119 0 203.5 84.5T1600 416z\"/></svg>
-", "@Twig/images/icon-minus-square-o.svg", "/opt/lampp/htdocs/Jimmy_Ramos_Proyecto_Symfony3/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views/images/icon-minus-square-o.svg");
+", "@Twig/images/icon-minus-square-o.svg", "/opt/lampp/htdocs/symfony_m14/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views/images/icon-minus-square-o.svg");
     }
 }
