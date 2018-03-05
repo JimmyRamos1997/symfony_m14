@@ -1,9 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="{{ asset('https://fonts.googleapis.com/css?family=Andada') }}" rel="stylesheet"> 
+<link rel="icon" type="image/png" href="{{ asset('https://dl2.pushbulletusercontent.com/FefaB9CnGuY0qg62CTsmAscSzYUYIHxa/logo.png') }}" />
 	<title></title>
+<link rel="stylesheet" href="{{ asset('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+<style>
+.footer {
+	border-radius: 5px;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #2F2F2F;
+   color: white;
+   text-align: center;
+}
+.jumbotron{
+background-color: #2F2F2F;
+
+}
+
+.text-center{
+	text-align: center;
+}
+.tamaño {
+	width: 20%;
+	min-width: 150px;
+}
+.body{
+	background-image: url('https://avante.biz/wp-content/uploads/Gradient-Wallpaper/Gradient-Wallpaper-009.jpg');
+background-size: cover;
+ background-attachment: fixed;
+}
+
+.letra-default {
+	font-family: 'Andada', serif;
+}
+</style>
 </head>
-<body>
-<h1>Indice</h1>
+<body class="body">
+	<div class="jumbotron">
+    <h3 style="color:white" class="letra-default">Projecte Symfony</h3>      
+    
+  </div>
+<div class="container letra-default" style="padding:10%;">
+
+<h4 style="text-align: center; color:white" class="letra-default">Formularis</h4>
+
+<p class="text-center"><a href="/symfony_m14/web/app_dev.php/create-tasca"><button class="btn btn-primary tamaño"> Crear tasca</button></a></p>
+<p class="text-center"><a href="#"><button class="btn btn-primary tamaño"> Crear subtasca</button></a></p>
+<p class="text-center"><a href="/symfony_m14/web/app_dev.php/create-user"><button class="btn btn-primary tamaño"> Crear usuario</button></a></p>
+
+</div>
+<div class="footer letra-default">
+  <p>
+  <p>Created by: Jordi Baliellas & Jimmy Ramos</p>
+  <p>Contact information: <a href="https://moodle.iescarlesvallbona.cat/">https://moodle.iescarlesvallbona.cat/</a></p>
+</p>
+</div>
 </body>
+
+
+<script src="{{ asset('https://code.jquery.com/jquery-3.2.1.slim.min.js') }}"></script>
+<script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js') }}"></script>
+<script src="{{ asset('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js') }}"></script>
 </html>

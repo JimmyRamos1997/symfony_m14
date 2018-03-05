@@ -13,3 +13,7 @@ vallbona_web_form:
 vallbona_web_createform:   
     path:     /create-user
     defaults: { _controller: VallbonaWebBundle:Formulari:create }
+
+vallbona_web_createformTasca:   
+    path:     /create-tasca
+    defaults: { _controller: VallbonaWebBundle:FormulariTasca:create }
