@@ -1,0 +1,32 @@
+.footer {
+	border-radius: 5px;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #2F2F2F;
+   color: white;
+   text-align: center;
+}
+.jumbotron{
+background-color: #2F2F2F;
+display: flex;
+
+}
+
+.text-center{
+	text-align: center;
+}
+.tamaño {
+	width: 20%;
+	min-width: 150px;
+}
+.body{
+	background-image: url('https://avante.biz/wp-content/uploads/Gradient-Wallpaper/Gradient-Wallpaper-009.jpg');
+background-size: cover;
+ background-attachment: fixed;
+}
+
+.letra-default {
+	font-family: 'Andada', serif;
+}
