@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% block head %}
+		<link href="https://fonts.googleapis.com/css?family=Andada" rel="stylesheet"> 
+		<link rel="icon" type="image/png" href="{{ asset('imatges/logo.png') }}" />
+		<title> {% block title %}{% endblock %} - Symfony</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+		<!-- Carregar CSS -->
+		<link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+	{% endblock %}
+</head>
+<body>
+
+	<div id="content">{% block content %}{% endblock %}</div>
+
+	<div class="footer letra-default">
+		{% block footer %}
+			<p>
+				<p>Created by: Jordi Baliellas & Jimmy Ramos</p>
+				<p>Contact information: <a href="https://moodle.iescarlesvallbona.cat/">https://moodle.iescarlesvallbona.cat/</a></p>
+			</p>
+		{% endblock %}  
+	</div>
+</body>
+</html>
