@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Subtasca
  *
- * @ORM\Table(name="subtasca", indexes={@ORM\Index(name="id_tasca", columns={"id_tasca"})})
+ * @ORM\Table(name="subtasca")
  * @ORM\Entity
  */
 class Subtasca
@@ -50,12 +50,9 @@ class Subtasca
     private $dataFinal;
 
     /**
-     * @var \Tasca
+     * @var integer
      *
-     * @ORM\ManyToOne(targetEntity="Tasca")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_tasca", referencedColumnName="id")
-     * })
+     * @ORM\Column(name="id_tasca", type="integer", nullable=true)
      */
     private $idTasca;
 
@@ -170,11 +167,11 @@ class Subtasca
     /**
      * Set idTasca
      *
-     * @param \Vallbona\WebBundle\Entity\Tasca $idTasca
+     * @param integer $idTasca
      *
      * @return Subtasca
      */
-    public function setIdTasca(\Vallbona\WebBundle\Entity\Tasca $idTasca = null)
+    public function setIdTasca($idTasca)
     {
         $this->idTasca = $idTasca;
 
@@ -184,7 +181,7 @@ class Subtasca
     /**
      * Get idTasca
      *
-     * @return \Vallbona\WebBundle\Entity\Tasca
+     * @return integer
      */
     public function getIdTasca()
     {

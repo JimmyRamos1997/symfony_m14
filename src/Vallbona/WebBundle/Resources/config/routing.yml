@@ -17,3 +17,6 @@ vallbona_web_createform:
 vallbona_web_createformTasca:   
     path:     /create-tasca
     defaults: { _controller: VallbonaWebBundle:FormulariTasca:create }
+vallbona_web_createformSubtasca:   
+    path:     /create-subtasca
+    defaults: { _controller: VallbonaWebBundle:FormulariSubtasca:create }

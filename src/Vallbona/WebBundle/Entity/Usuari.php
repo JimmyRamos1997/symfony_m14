@@ -3,7 +3,6 @@
 namespace Vallbona\WebBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Usuari
@@ -26,12 +25,6 @@ class Usuari
      * @var string
      *
      * @ORM\Column(name="nom", type="string", length=200, nullable=false)
-     * @Assert\Length(
-     *      min = 2,
-     *      max = 15,
-     *      minMessage = "Your first name must be at least {{ limit }} characters long",
-     *      maxMessage = "Your first name cannot be longer than {{ limit }} characters"
-     * )
      */
     private $nom;
 
@@ -46,10 +39,6 @@ class Usuari
      * @var string
      *
      * @ORM\Column(name="correo", type="string", length=200, nullable=false)
-     * @Assert\Email(
-     *     message = "The email '{{ value }}' is not a valid email.",
-     *     checkMX = true
-     * )
      */
     private $correo;
 

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+{{form_start(form, {'action':'', 'method':'POST'})}} {{form_end(form)}}
+
+{% if data is not null %}
+    <p>{{ data.nom }}</p>
+	<p>{{ data.descripcio }}</p>
+	<p>{{ data.dataInici|date('Y-m-d') }}</p>
+	<p>{{ data.dataFinal|date('Y-m-d') }}</p>
+	<p>{{ data.idTasca }}</p>
+{% endif %}
+</body>
+</html>

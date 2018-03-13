@@ -15,11 +15,11 @@ class __TwigTemplate_d3e1159b0ed722fa71241cb05f7d0be051b45901fc433cf88030d1c582b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e9b6d44189346cd80bb4cb42d2a67752f5912a9931a2ccea69c82072041c79bb = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_e9b6d44189346cd80bb4cb42d2a67752f5912a9931a2ccea69c82072041c79bb->enter($__internal_e9b6d44189346cd80bb4cb42d2a67752f5912a9931a2ccea69c82072041c79bb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:form:createTasca.html.twig"));
+        $__internal_3ae026b9dd098de12dd1cfe7e4a2aadd92ef9300b67762e138a952f4517d5bbf = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_3ae026b9dd098de12dd1cfe7e4a2aadd92ef9300b67762e138a952f4517d5bbf->enter($__internal_3ae026b9dd098de12dd1cfe7e4a2aadd92ef9300b67762e138a952f4517d5bbf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:form:createTasca.html.twig"));
 
-        $__internal_3612c5c2c68fa4bd9477e7cbabcef1d3b06b4d7adf914d70a9732a461d93773a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3612c5c2c68fa4bd9477e7cbabcef1d3b06b4d7adf914d70a9732a461d93773a->enter($__internal_3612c5c2c68fa4bd9477e7cbabcef1d3b06b4d7adf914d70a9732a461d93773a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:form:createTasca.html.twig"));
+        $__internal_720f8e825969c6ed01595841e222ac868478f3321aabbbc93853530e9df1e995 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_720f8e825969c6ed01595841e222ac868478f3321aabbbc93853530e9df1e995->enter($__internal_720f8e825969c6ed01595841e222ac868478f3321aabbbc93853530e9df1e995_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:form:createTasca.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -34,29 +34,35 @@ class __TwigTemplate_d3e1159b0ed722fa71241cb05f7d0be051b45901fc433cf88030d1c582b
         echo " ";
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_end');
         echo "
-
 ";
-        // line 9
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(($context["data"] ?? $this->getContext($context, "data")));
-        foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
+        // line 8
+        if ( !(null === ($context["data"] ?? $this->getContext($context, "data")))) {
+            // line 9
+            echo "    <p>";
+            echo twig_escape_filter($this->env, $this->getAttribute(($context["data"] ?? $this->getContext($context, "data")), "nom", array()), "html", null, true);
+            echo "</p>
+\t<p>";
             // line 10
-            echo "<p>";
-            echo twig_escape_filter($this->env, $context["item"], "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute(($context["data"] ?? $this->getContext($context, "data")), "descripcio", array()), "html", null, true);
+            echo "</p>
+\t<p>";
+            // line 11
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute(($context["data"] ?? $this->getContext($context, "data")), "dataInici", array()), "Y-m-d"), "html", null, true);
+            echo "</p>
+\t<p>";
+            // line 12
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute(($context["data"] ?? $this->getContext($context, "data")), "dataFinal", array()), "Y-m-d"), "html", null, true);
             echo "</p>
 ";
         }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 12
+        // line 14
         echo "</body>
 </html>";
         
-        $__internal_e9b6d44189346cd80bb4cb42d2a67752f5912a9931a2ccea69c82072041c79bb->leave($__internal_e9b6d44189346cd80bb4cb42d2a67752f5912a9931a2ccea69c82072041c79bb_prof);
+        $__internal_3ae026b9dd098de12dd1cfe7e4a2aadd92ef9300b67762e138a952f4517d5bbf->leave($__internal_3ae026b9dd098de12dd1cfe7e4a2aadd92ef9300b67762e138a952f4517d5bbf_prof);
 
         
-        $__internal_3612c5c2c68fa4bd9477e7cbabcef1d3b06b4d7adf914d70a9732a461d93773a->leave($__internal_3612c5c2c68fa4bd9477e7cbabcef1d3b06b4d7adf914d70a9732a461d93773a_prof);
+        $__internal_720f8e825969c6ed01595841e222ac868478f3321aabbbc93853530e9df1e995->leave($__internal_720f8e825969c6ed01595841e222ac868478f3321aabbbc93853530e9df1e995_prof);
 
     }
 
@@ -72,7 +78,7 @@ class __TwigTemplate_d3e1159b0ed722fa71241cb05f7d0be051b45901fc433cf88030d1c582b
 
     public function getDebugInfo()
     {
-        return array (  53 => 12,  44 => 10,  40 => 9,  33 => 7,  25 => 1,);
+        return array (  59 => 14,  54 => 12,  50 => 11,  46 => 10,  41 => 9,  39 => 8,  33 => 7,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -92,10 +98,12 @@ class __TwigTemplate_d3e1159b0ed722fa71241cb05f7d0be051b45901fc433cf88030d1c582b
 </head>
 <body>
 {{form_start(form, {'action':'', 'method':'POST'})}} {{form_end(form)}}
-
-{% for item in data %}
-<p>{{ item }}</p>
-{% endfor %}
+{% if data is not null %}
+    <p>{{ data.nom }}</p>
+\t<p>{{ data.descripcio }}</p>
+\t<p>{{ data.dataInici|date('Y-m-d') }}</p>
+\t<p>{{ data.dataFinal|date('Y-m-d') }}</p>
+{% endif %}
 </body>
 </html>", "VallbonaWebBundle:form:createTasca.html.twig", "/opt/lampp/htdocs/symfony_m14/src/Vallbona/WebBundle/Resources/views/form/createTasca.html.twig");
     }

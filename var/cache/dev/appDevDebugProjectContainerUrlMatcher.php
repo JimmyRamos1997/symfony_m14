@@ -119,14 +119,22 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'Vallbona\\WebBundle\\Controller\\FormulariController::indexAction',  '_route' => 'vallbona_web_form',);
         }
 
-        // vallbona_web_createform
-        if ('/create-user' === $pathinfo) {
-            return array (  '_controller' => 'Vallbona\\WebBundle\\Controller\\FormulariController::createAction',  '_route' => 'vallbona_web_createform',);
-        }
+        if (0 === strpos($pathinfo, '/create-')) {
+            // vallbona_web_createform
+            if ('/create-user' === $pathinfo) {
+                return array (  '_controller' => 'Vallbona\\WebBundle\\Controller\\FormulariController::createAction',  '_route' => 'vallbona_web_createform',);
+            }
 
-        // vallbona_web_createformTasca
-        if ('/create-tasca' === $pathinfo) {
-            return array (  '_controller' => 'Vallbona\\WebBundle\\Controller\\FormulariTascaController::createAction',  '_route' => 'vallbona_web_createformTasca',);
+            // vallbona_web_createformTasca
+            if ('/create-tasca' === $pathinfo) {
+                return array (  '_controller' => 'Vallbona\\WebBundle\\Controller\\FormulariTascaController::createAction',  '_route' => 'vallbona_web_createformTasca',);
+            }
+
+            // vallbona_web_createformSubtasca
+            if ('/create-subtasca' === $pathinfo) {
+                return array (  '_controller' => 'Vallbona\\WebBundle\\Controller\\FormulariSubtascaController::createAction',  '_route' => 'vallbona_web_createformSubtasca',);
+            }
+
         }
 
         // homepage

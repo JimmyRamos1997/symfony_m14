@@ -5,9 +5,11 @@
 </head>
 <body>
 {{form_start(form, {'action':'', 'method':'POST'})}} {{form_end(form)}}
-
-{% for item in data %}
-<p>{{ item }}</p>
-{% endfor %}
+{% if data is not null %}
+    <p>{{ data.nom }}</p>
+	<p>{{ data.descripcio }}</p>
+	<p>{{ data.dataInici|date('Y-m-d') }}</p>
+	<p>{{ data.dataFinal|date('Y-m-d') }}</p>
+{% endif %}
 </body>
 </html>
