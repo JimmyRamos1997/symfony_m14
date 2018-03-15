@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-{{form_start(form, {'action':'', 'method':'POST'})}} {{form_end(form)}}
+{% extends "base.html.twig" %}
+{% block title %}User{% endblock %}
 
-{% for item in data %}
-<p>{{ item }}</p>
-{% endfor %}
-</body>
-</html>
+	{% block content %}
+
+		{{form_start(form, {'action':'', 'method':'POST'})}} {{form_end(form)}}
+
+		{% for item in data %}
+			<p>{{ item }}</p>
+		{% endfor %}
+
+	{% endblock %}

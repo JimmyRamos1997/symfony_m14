@@ -1,15 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-{{form_start(form, {'action':'', 'method':'POST'})}} {{form_end(form)}}
+{% extends "base.html.twig" %}
+{% block title %}User{% endblock %}
+
+{% block content %}
+
+
+{{form_start(form, {'action':'', 'method':'POST'})}} 
+{{ form_label(form.nom) }}
+{{ form_errors(form.nom) }}
+{{ form_widget(form.nom, {'attr': {'id': 'idnom'}}) }}
+{{form_end(form)}}
+
 {% if data is not null %}
     <p>{{ data.nom }}</p>
 	<p>{{ data.descripcio }}</p>
 	<p>{{ data.dataInici|date('Y-m-d') }}</p>
 	<p>{{ data.dataFinal|date('Y-m-d') }}</p>
 {% endif %}
-</body>
-</html>
+
+{% endblock %}

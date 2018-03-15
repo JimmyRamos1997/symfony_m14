@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+{% extends "base.html.twig" %}
+{% block title %}Subtasca{% endblock %}
+
+{% block content %}
+
 {{form_start(form, {'action':'', 'method':'POST'})}} {{form_end(form)}}
 
 {% if data is not null %}
@@ -13,5 +12,5 @@
 	<p>{{ data.dataFinal|date('Y-m-d') }}</p>
 	<p>{{ data.idTasca }}</p>
 {% endif %}
-</body>
-</html>
+
+{% endblock %}
