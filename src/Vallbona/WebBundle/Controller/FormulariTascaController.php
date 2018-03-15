@@ -21,12 +21,13 @@ class FormulariTascaController extends Controller
         if($form->isValid()){
         $status = "Formulari vàlid";
         //enviem les dades a la vista per visualitzar-les
-        $data = array(
-        'nom' => $form->get('nom')->getData(),
-        'dataInici' => $form->get('dataInici')->getData(),
-        'dataFinal' => $form->get('dataFinal')->getData(),
-        'descripcio' => $form->get('descripcio')->getData(),
-        );
+            $tasca->setNom($form->get('nom')->getData());
+            $tasca->setDescripcio($form->get('descripcio')->getData());
+            $tasca->setDataInici($form->get('dataInici')->getData());
+            $tasca->setDataFinal($form->get('dataFinal')->getData());
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($tasca);
+            $flush = $em->flush();
         }
         else{
         $status = null;
@@ -37,7 +38,7 @@ class FormulariTascaController extends Controller
     		'titol' => $titol, 
     		'form' =>$form->createView(),
     		'status' => $status,
-    		'data' => $data, 
+    		
     	));
     }
 }

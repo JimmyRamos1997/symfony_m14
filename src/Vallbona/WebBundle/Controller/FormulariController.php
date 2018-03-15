@@ -18,18 +18,19 @@ class FormulariController extends Controller
 
     public function createAction(Request $request) {
     	$titol = "titol del formulari"; 
+
     	$usuari = new Usuari(); 
     	$form = $this->createForm(UsuariType::class, $usuari);
-
-$form->handleRequest($request);
-if($form->isValid()){
-$status = "Formulari vàlid";
-//enviem les dades a la vista per visualitzar-les
-$data = array(
-'nom' => $form->get('nom')->getData(),
-'cognom' => $form->get('cognom')->getData(),
-'correo' => $form->get('correo')->getData(),
-);
+        $data ="";
+        $form->handleRequest($request);
+        if($form->isValid()){
+            $status = "Formulari vàlid";
+            $usuari->setNom($form->get('nom')->getData());
+            $usuari->setCognom($form->get('cognom')->getData());
+            $usuari->setCorreo($form->get('correo')->getData());
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($usuari);
+            $flush = $em->flush();
 }else{
 $status = null;
 $data = null;
@@ -39,7 +40,6 @@ $data = null;
     		'titol' => $titol, 
     		'form' =>$form->createView(),
     		'status' => $status,
-    		'data' => $data, 
     	));
     }
 }

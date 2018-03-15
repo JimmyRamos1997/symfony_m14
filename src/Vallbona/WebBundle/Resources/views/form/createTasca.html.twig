@@ -9,12 +9,4 @@
 {{ form_errors(form.nom) }}
 {{ form_widget(form.nom, {'attr': {'id': 'idnom'}}) }}
 {{form_end(form)}}
-
-{% if data is not null %}
-    <p>{{ data.nom }}</p>
-	<p>{{ data.descripcio }}</p>
-	<p>{{ data.dataInici|date('Y-m-d') }}</p>
-	<p>{{ data.dataFinal|date('Y-m-d') }}</p>
-{% endif %}
-
 {% endblock %}

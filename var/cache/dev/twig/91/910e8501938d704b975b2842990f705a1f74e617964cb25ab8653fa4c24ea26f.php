@@ -7,56 +7,78 @@ class __TwigTemplate_9d1e5f5e3e015128e1031e155a3ca6d712abb3604e2b573511cc3c8c659
     {
         parent::__construct($env);
 
-        $this->parent = false;
-
+        // line 1
+        $this->parent = $this->loadTemplate("base.html.twig", "VallbonaWebBundle:form:create.html.twig", 1);
         $this->blocks = array(
+            'title' => array($this, 'block_title'),
+            'content' => array($this, 'block_content'),
         );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "base.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_92c174cef7cffe500a5a945f3e5f32b22fb2503dd429949af2f308e4baa65145 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_92c174cef7cffe500a5a945f3e5f32b22fb2503dd429949af2f308e4baa65145->enter($__internal_92c174cef7cffe500a5a945f3e5f32b22fb2503dd429949af2f308e4baa65145_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:form:create.html.twig"));
+        $__internal_c6777d1356250d92a6f57d3a13ad942a107bc5a63c2255387b2ebcfa35076de6 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_c6777d1356250d92a6f57d3a13ad942a107bc5a63c2255387b2ebcfa35076de6->enter($__internal_c6777d1356250d92a6f57d3a13ad942a107bc5a63c2255387b2ebcfa35076de6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:form:create.html.twig"));
 
-        $__internal_2b54426db157eaff805cbb621ba6c4e9e39872638163e432f41fe60d0dfef5d7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2b54426db157eaff805cbb621ba6c4e9e39872638163e432f41fe60d0dfef5d7->enter($__internal_2b54426db157eaff805cbb621ba6c4e9e39872638163e432f41fe60d0dfef5d7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:form:create.html.twig"));
+        $__internal_b8ee6ad3d1a84d5c7840dd146efe6f16aa62d561d7b77da80fb6df002355ecf0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b8ee6ad3d1a84d5c7840dd146efe6f16aa62d561d7b77da80fb6df002355ecf0->enter($__internal_b8ee6ad3d1a84d5c7840dd146efe6f16aa62d561d7b77da80fb6df002355ecf0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:form:create.html.twig"));
 
-        // line 1
-        echo "<!DOCTYPE html>
-<html>
-<head>
-\t<title></title>
-</head>
-<body>
-";
-        // line 7
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+        
+        $__internal_c6777d1356250d92a6f57d3a13ad942a107bc5a63c2255387b2ebcfa35076de6->leave($__internal_c6777d1356250d92a6f57d3a13ad942a107bc5a63c2255387b2ebcfa35076de6_prof);
+
+        
+        $__internal_b8ee6ad3d1a84d5c7840dd146efe6f16aa62d561d7b77da80fb6df002355ecf0->leave($__internal_b8ee6ad3d1a84d5c7840dd146efe6f16aa62d561d7b77da80fb6df002355ecf0_prof);
+
+    }
+
+    // line 2
+    public function block_title($context, array $blocks = array())
+    {
+        $__internal_a75ab7431d7fb07e7632ae6bc9887a4beefc30a84b25d1027ecff3d157c1e695 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_a75ab7431d7fb07e7632ae6bc9887a4beefc30a84b25d1027ecff3d157c1e695->enter($__internal_a75ab7431d7fb07e7632ae6bc9887a4beefc30a84b25d1027ecff3d157c1e695_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+
+        $__internal_f9496d723565df44cbdc747b30c741fd7c0c21a7cb3e28c0748c3d51fefdcaff = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_f9496d723565df44cbdc747b30c741fd7c0c21a7cb3e28c0748c3d51fefdcaff->enter($__internal_f9496d723565df44cbdc747b30c741fd7c0c21a7cb3e28c0748c3d51fefdcaff_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+
+        echo "User";
+        
+        $__internal_f9496d723565df44cbdc747b30c741fd7c0c21a7cb3e28c0748c3d51fefdcaff->leave($__internal_f9496d723565df44cbdc747b30c741fd7c0c21a7cb3e28c0748c3d51fefdcaff_prof);
+
+        
+        $__internal_a75ab7431d7fb07e7632ae6bc9887a4beefc30a84b25d1027ecff3d157c1e695->leave($__internal_a75ab7431d7fb07e7632ae6bc9887a4beefc30a84b25d1027ecff3d157c1e695_prof);
+
+    }
+
+    // line 4
+    public function block_content($context, array $blocks = array())
+    {
+        $__internal_00466409f412287d833a750a65e5511cdc6cc1fe36f189a8ce43d3bacdecb2d8 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_00466409f412287d833a750a65e5511cdc6cc1fe36f189a8ce43d3bacdecb2d8->enter($__internal_00466409f412287d833a750a65e5511cdc6cc1fe36f189a8ce43d3bacdecb2d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+
+        $__internal_b0ccf5b7e086aae2db011e753ba760d81ab221f7f765b12b79bf1c3d09b00b1c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b0ccf5b7e086aae2db011e753ba760d81ab221f7f765b12b79bf1c3d09b00b1c->enter($__internal_b0ccf5b7e086aae2db011e753ba760d81ab221f7f765b12b79bf1c3d09b00b1c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+
+        // line 5
+        echo "
+\t\t";
+        // line 6
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_start', array("action" => "", "method" => "POST"));
         echo " ";
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_end');
         echo "
 
-";
-        // line 9
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(($context["data"] ?? $this->getContext($context, "data")));
-        foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 10
-            echo "<p>";
-            echo twig_escape_filter($this->env, $context["item"], "html", null, true);
-            echo "</p>
-";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 12
-        echo "</body>
-</html>";
+\t";
         
-        $__internal_92c174cef7cffe500a5a945f3e5f32b22fb2503dd429949af2f308e4baa65145->leave($__internal_92c174cef7cffe500a5a945f3e5f32b22fb2503dd429949af2f308e4baa65145_prof);
+        $__internal_b0ccf5b7e086aae2db011e753ba760d81ab221f7f765b12b79bf1c3d09b00b1c->leave($__internal_b0ccf5b7e086aae2db011e753ba760d81ab221f7f765b12b79bf1c3d09b00b1c_prof);
 
         
-        $__internal_2b54426db157eaff805cbb621ba6c4e9e39872638163e432f41fe60d0dfef5d7->leave($__internal_2b54426db157eaff805cbb621ba6c4e9e39872638163e432f41fe60d0dfef5d7_prof);
+        $__internal_00466409f412287d833a750a65e5511cdc6cc1fe36f189a8ce43d3bacdecb2d8->leave($__internal_00466409f412287d833a750a65e5511cdc6cc1fe36f189a8ce43d3bacdecb2d8_prof);
 
     }
 
@@ -72,7 +94,7 @@ class __TwigTemplate_9d1e5f5e3e015128e1031e155a3ca6d712abb3604e2b573511cc3c8c659
 
     public function getDebugInfo()
     {
-        return array (  53 => 12,  44 => 10,  40 => 9,  33 => 7,  25 => 1,);
+        return array (  71 => 6,  68 => 5,  59 => 4,  41 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -85,18 +107,13 @@ class __TwigTemplate_9d1e5f5e3e015128e1031e155a3ca6d712abb3604e2b573511cc3c8c659
 
     public function getSourceContext()
     {
-        return new Twig_Source("<!DOCTYPE html>
-<html>
-<head>
-\t<title></title>
-</head>
-<body>
-{{form_start(form, {'action':'', 'method':'POST'})}} {{form_end(form)}}
+        return new Twig_Source("{% extends \"base.html.twig\" %}
+{% block title %}User{% endblock %}
 
-{% for item in data %}
-<p>{{ item }}</p>
-{% endfor %}
-</body>
-</html>", "VallbonaWebBundle:form:create.html.twig", "/opt/lampp/htdocs/symfony_m14/src/Vallbona/WebBundle/Resources/views/form/create.html.twig");
+\t{% block content %}
+
+\t\t{{form_start(form, {'action':'', 'method':'POST'})}} {{form_end(form)}}
+
+\t{% endblock %}", "VallbonaWebBundle:form:create.html.twig", "/opt/lampp/htdocs/symfony_m14/src/Vallbona/WebBundle/Resources/views/form/create.html.twig");
     }
 }
