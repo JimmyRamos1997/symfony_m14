@@ -22,7 +22,7 @@ display: flex;
 	min-width: 150px;
 }
 .body{
-	background-image: url('https://avante.biz/wp-content/uploads/Gradient-Wallpaper/Gradient-Wallpaper-009.jpg');
+	background-color: #b3f6ff;;
 background-size: cover;
  background-attachment: fixed;
 }
@@ -42,4 +42,54 @@ background-size: cover;
 }
 .nom input[type=text]:focus {
     border: 3px solid #555;
+}
+
+.formproj { 
+  width: 700px;
+  padding: 7% 0 0;
+  margin: auto;
+}
+.centrarform {
+  border-radius: 5px;
+  position: relative;
+  background: #FFFFFF;
+  max-width: 700px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2),
+  0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.menuinici {
+  background-color: white;
+  background-color: #ffffff;
+  border-radius: 75px;
+  max-width: 25%;
+  padding-bottom: 5%;
+  opacity: 0.9;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #17a2b8;
+    border-radius: 20px;
+}
+
+.titlemenu {
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 0;
+  background-color: #2F2F2F;
+  margin-bottom: 20px;
+  border-radius: 75px 75px 0px 0px;
+  padding-bottom: 10%;
+  vertical-align: middle;
+  padding-top: 30px;
+}
+.butonsmenu {
+  margin-top: 15%;
 }
