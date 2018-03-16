@@ -1,0 +1,25 @@
+<h1>Listado de Subtasques</h1>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Nom</th>
+        <th>Descripcio</th>
+        <th>Data d'inici</th>
+        <th>Data de finalització</th>
+        <th>Tasca-Referencia</th>
+        <th>Editar</th>
+        <th>Eliminar</th>
+    </tr>
+    {% for subtasca in subtasques %}
+    <tr>
+        <td>{{ subtasca.id }}</td>
+        <td>{{ subtasca.nom }}</td>
+        <td>{{ subtasca.descripcio }}</td>
+        <td>{{ subtasca.dataInici | date('d-m-Y')}}</td>
+        <td>{{ subtasca.dataFinal | date('d-m-Y') }}</td>
+        <td>{{ subtasca.idTasca }}</td>
+        <td><button class="btn btn-primary">Eliminar</button></td>
+        <td><button class="btn btn-danger">Editar</button></td>
+    </tr>
+    {% endfor %}
+</table>

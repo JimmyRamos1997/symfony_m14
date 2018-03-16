@@ -41,4 +41,12 @@ class FormulariTascaController extends Controller
     		
     	));
     }
+
+ public function listarAction()
+    {
+        $tasques = $this->getDoctrine()->getRepository('VallbonaWebBundle:Tasca')->findAll(); 
+        return $this->render('VallbonaWebBundle:lista:listaTasques.html.twig', array('tasques' => $tasques));
+
+    }
+
 }

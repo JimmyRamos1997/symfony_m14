@@ -23,5 +23,13 @@ vallbona_web_createformSubtasca:
     defaults: { _controller: VallbonaWebBundle:FormulariSubtasca:create } 
        
 vallbona_web_listarUser: 
-    path:  /users-listar
+    path:     /users-listar
     defaults: { _controller: VallbonaWebBundle:Formulari:listar }
+
+vallbona_web_listarSubtasca: 
+    path:     /subtasques-listar
+    defaults: { _controller: VallbonaWebBundle:FormulariSubtasca:listar }
+
+vallbona_web_listarTasca: 
+    path:     /tasques-listar
+    defaults: { _controller: VallbonaWebBundle:FormulariTasca:listar }

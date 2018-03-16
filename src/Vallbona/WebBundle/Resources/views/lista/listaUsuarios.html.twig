@@ -5,6 +5,8 @@
         <th>Nom</th>
         <th>Cognom</th>
         <th>Correo</th>
+        <th>Editar</th>
+        <th>Eliminar</th>
     </tr>
     {% for user in users %}
     <tr>
@@ -12,6 +14,8 @@
         <td>{{ user.nom }}</td>
         <td>{{ user.cognom }}</td>
         <td>{{ user.correo }}</td>
+        <td><button class="btn btn-primary">Eliminar</button></td>
+        <td><button class="btn btn-danger">Editar</button></td>
     </tr>
     {% endfor %}
 </table>

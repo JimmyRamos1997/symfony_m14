@@ -40,4 +40,12 @@ class FormulariSubtascaController extends Controller
     		
     	));
     }
+
+ public function listarAction()
+    {
+        $subtasques = $this->getDoctrine()->getRepository('VallbonaWebBundle:Subtasca')->findAll(); 
+        return $this->render('VallbonaWebBundle:lista:listaSubtasques.html.twig', array('subtasques' => $subtasques));
+
+    }
+
 }

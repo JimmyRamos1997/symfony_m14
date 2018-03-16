@@ -1,0 +1,23 @@
+<h1>Listado de Tasques</h1>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Nom</th>
+        <th>Descripcio</th>
+        <th>Data d'inici</th>
+        <th>Data de finalització</th>       
+        <th>Editar</th>
+        <th>Eliminar</th>
+    </tr>
+    {% for tasca in tasques %}
+    <tr>
+        <td>{{ tasca.id }}</td>
+        <td>{{ tasca.nom }}</td>
+        <td>{{ tasca.descripcio }}</td>
+        <td>{{ tasca.dataInici | date('d-m-Y')}}</td>
+        <td>{{ tasca.dataFinal | date('d-m-Y') }}</td>      
+        <td><button class="btn btn-primary">Eliminar</button></td>
+        <td><button class="btn btn-danger">Editar</button></td>
+    </tr>
+    {% endfor %}
+</table>
