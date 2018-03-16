@@ -1,0 +1,17 @@
+<h1>Listado de Usuarios</h1>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Nom</th>
+        <th>Cognom</th>
+        <th>Correo</th>
+    </tr>
+    {% for user in users %}
+    <tr>
+        <td>{{ user.id }}</td>
+        <td>{{ user.nom }}</td>
+        <td>{{ user.cognom }}</td>
+        <td>{{ user.correo }}</td>
+    </tr>
+    {% endfor %}
+</table>

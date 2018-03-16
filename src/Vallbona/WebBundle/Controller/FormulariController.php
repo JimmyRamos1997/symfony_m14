@@ -18,7 +18,6 @@ class FormulariController extends Controller
 
     public function createAction(Request $request) {
     	$titol = "titol del formulari"; 
-
     	$usuari = new Usuari(); 
     	$form = $this->createForm(UsuariType::class, $usuari);
         $data ="";
@@ -31,15 +30,22 @@ class FormulariController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($usuari);
             $flush = $em->flush();
-}else{
-$status = null;
-$data = null;
-}
+        }else{
+            $status = null;
+            $data = null;
+        }
 
-    	return $this->render('VallbonaWebBundle:form:create.html.twig', array( 
-    		'titol' => $titol, 
-    		'form' =>$form->createView(),
-    		'status' => $status,
-    	));
+        return $this->render('VallbonaWebBundle:form:create.html.twig', array( 
+          'titol' => $titol, 
+          'form' =>$form->createView(),
+          'status' => $status,
+          ));
     }
+    public function listarAction()
+    {
+        $users = $this->getDoctrine()->getRepository('VallbonaWebBundle:Usuari')->findAll(); 
+        return $this->render('VallbonaWebBundle:lista:listaUsuarios.html.twig', array('users' => $users));
+
+    }
+
 }
