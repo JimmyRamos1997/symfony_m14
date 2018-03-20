@@ -1,13 +1,17 @@
 {% extends "base.html.twig" %}
 {% block title %}User{% endblock %}
-
 	{% block content %}
+ 	{% if app.session.flashBag.has('danger') %}
+              	{% for msg in app.session.flashBag.get('danger') %}
+                <div class="alert alert-danger">
+                    {{ msg }}
+                </div>
+				{% endfor %}
+    {% endif %}
 		<div class="formproj">
 		<div class="centrarform">
-
-		{{form_start(form, {'action':'', 'method':'POST'})}} {{form_end(form)}}
-
-		
+		{{form_start(form,{'action':'', 'method':'POST'})}} 
+		{{form_end(form)}}		
 		</div>
 		</div>
 	{% endblock %}

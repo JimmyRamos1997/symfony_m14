@@ -15,11 +15,11 @@ class __TwigTemplate_b5777f3a39352d0bd88864189794f3133a9ea06803d57f22057323db2ca
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_270e79016dbdd9f6e683ab8ec7e4f962bee4f61a565fc00859a83f3d93ce6225 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_270e79016dbdd9f6e683ab8ec7e4f962bee4f61a565fc00859a83f3d93ce6225->enter($__internal_270e79016dbdd9f6e683ab8ec7e4f962bee4f61a565fc00859a83f3d93ce6225_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:lista:listaTasques.html.twig"));
+        $__internal_da6d03a22604ee6c60dcf07288f62684dfcc16c9262aced7bf205e1b056a83f5 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_da6d03a22604ee6c60dcf07288f62684dfcc16c9262aced7bf205e1b056a83f5->enter($__internal_da6d03a22604ee6c60dcf07288f62684dfcc16c9262aced7bf205e1b056a83f5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:lista:listaTasques.html.twig"));
 
-        $__internal_f4c485027ba8d150551a94f34341c380fa6696f097cd632b64b31e305d82ca13 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f4c485027ba8d150551a94f34341c380fa6696f097cd632b64b31e305d82ca13->enter($__internal_f4c485027ba8d150551a94f34341c380fa6696f097cd632b64b31e305d82ca13_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:lista:listaTasques.html.twig"));
+        $__internal_a751eaeaf07358242755b4d8307bcd335a85600aee021832865e1b9de27459ff = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a751eaeaf07358242755b4d8307bcd335a85600aee021832865e1b9de27459ff->enter($__internal_a751eaeaf07358242755b4d8307bcd335a85600aee021832865e1b9de27459ff_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:lista:listaTasques.html.twig"));
 
         // line 1
         echo "<h1>Listado de Tasques</h1>
@@ -71,10 +71,10 @@ class __TwigTemplate_b5777f3a39352d0bd88864189794f3133a9ea06803d57f22057323db2ca
         // line 23
         echo "</table>";
         
-        $__internal_270e79016dbdd9f6e683ab8ec7e4f962bee4f61a565fc00859a83f3d93ce6225->leave($__internal_270e79016dbdd9f6e683ab8ec7e4f962bee4f61a565fc00859a83f3d93ce6225_prof);
+        $__internal_da6d03a22604ee6c60dcf07288f62684dfcc16c9262aced7bf205e1b056a83f5->leave($__internal_da6d03a22604ee6c60dcf07288f62684dfcc16c9262aced7bf205e1b056a83f5_prof);
 
         
-        $__internal_f4c485027ba8d150551a94f34341c380fa6696f097cd632b64b31e305d82ca13->leave($__internal_f4c485027ba8d150551a94f34341c380fa6696f097cd632b64b31e305d82ca13_prof);
+        $__internal_a751eaeaf07358242755b4d8307bcd335a85600aee021832865e1b9de27459ff->leave($__internal_a751eaeaf07358242755b4d8307bcd335a85600aee021832865e1b9de27459ff_prof);
 
     }
 

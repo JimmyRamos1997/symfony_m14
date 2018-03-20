@@ -152,6 +152,16 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'Vallbona\\WebBundle\\Controller\\FormulariTascaController::listarAction',  '_route' => 'vallbona_web_listarTasca',);
         }
 
+        // vallbona_web_eliminarUser
+        if (0 === strpos($pathinfo, '/delete-user') && preg_match('#^/delete\\-user/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'vallbona_web_eliminarUser')), array (  '_controller' => 'Vallbona\\WebBundle\\Controller\\FormulariController::eliminarAction',));
+        }
+
+        // vallbona_web_eliminarSubtasca
+        if (0 === strpos($pathinfo, '/delete-subtasca') && preg_match('#^/delete\\-subtasca/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'vallbona_web_eliminarSubtasca')), array (  '_controller' => 'Vallbona\\WebBundle\\Controller\\FormulariSubtascaController::eliminarAction',));
+        }
+
         // homepage
         if ('' === $trimmedPathinfo) {
             $ret = array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);

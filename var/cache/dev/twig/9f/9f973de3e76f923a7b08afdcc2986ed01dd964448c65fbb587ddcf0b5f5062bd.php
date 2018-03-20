@@ -7,69 +7,128 @@ class __TwigTemplate_55ff9f856279ece5ff4a7164b767a388b58dfa9c245d2787ca28d1100e4
     {
         parent::__construct($env);
 
-        $this->parent = false;
-
+        // line 1
+        $this->parent = $this->loadTemplate("base.html.twig", "VallbonaWebBundle:lista:listaUsuarios.html.twig", 1);
         $this->blocks = array(
+            'content' => array($this, 'block_content'),
         );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "base.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_471da0e16484b3948082c3efff3206fe6c58d18dbe8a8d9aa6007a52b0ea434e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_471da0e16484b3948082c3efff3206fe6c58d18dbe8a8d9aa6007a52b0ea434e->enter($__internal_471da0e16484b3948082c3efff3206fe6c58d18dbe8a8d9aa6007a52b0ea434e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:lista:listaUsuarios.html.twig"));
+        $__internal_555316eb89cb1beeeedc5583c31cd40ecc0aa01215f15f6f854a2b02cb680568 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_555316eb89cb1beeeedc5583c31cd40ecc0aa01215f15f6f854a2b02cb680568->enter($__internal_555316eb89cb1beeeedc5583c31cd40ecc0aa01215f15f6f854a2b02cb680568_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:lista:listaUsuarios.html.twig"));
 
-        $__internal_d9c14b8c2187ddf2eac02e8745995b91c18368e05a9a482939ba3705341c35d4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d9c14b8c2187ddf2eac02e8745995b91c18368e05a9a482939ba3705341c35d4->enter($__internal_d9c14b8c2187ddf2eac02e8745995b91c18368e05a9a482939ba3705341c35d4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:lista:listaUsuarios.html.twig"));
+        $__internal_dad40bc8ff2cdd6c31c6ee283312ae94def88d6b5df95f0b9f4d4f21ea4f3f14 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_dad40bc8ff2cdd6c31c6ee283312ae94def88d6b5df95f0b9f4d4f21ea4f3f14->enter($__internal_dad40bc8ff2cdd6c31c6ee283312ae94def88d6b5df95f0b9f4d4f21ea4f3f14_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:lista:listaUsuarios.html.twig"));
 
-        // line 1
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+        
+        $__internal_555316eb89cb1beeeedc5583c31cd40ecc0aa01215f15f6f854a2b02cb680568->leave($__internal_555316eb89cb1beeeedc5583c31cd40ecc0aa01215f15f6f854a2b02cb680568_prof);
+
+        
+        $__internal_dad40bc8ff2cdd6c31c6ee283312ae94def88d6b5df95f0b9f4d4f21ea4f3f14->leave($__internal_dad40bc8ff2cdd6c31c6ee283312ae94def88d6b5df95f0b9f4d4f21ea4f3f14_prof);
+
+    }
+
+    // line 2
+    public function block_content($context, array $blocks = array())
+    {
+        $__internal_0b3cc21c43f01573fe2f027d06acfcb9f9043d29087dabac86880350062341b1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_0b3cc21c43f01573fe2f027d06acfcb9f9043d29087dabac86880350062341b1->enter($__internal_0b3cc21c43f01573fe2f027d06acfcb9f9043d29087dabac86880350062341b1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+
+        $__internal_cefff9f3ae7f8008ed3e53484832c06f6c99163aae8f00cbb89d47bbdee87452 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_cefff9f3ae7f8008ed3e53484832c06f6c99163aae8f00cbb89d47bbdee87452->enter($__internal_cefff9f3ae7f8008ed3e53484832c06f6c99163aae8f00cbb89d47bbdee87452_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+
+        // line 3
         echo "<h1>Listado de Usuarios</h1>
-<table border=\"1\">
+    ";
+        // line 4
+        if ($this->getAttribute($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "session", array()), "flashBag", array()), "has", array(0 => "success"), "method")) {
+            echo "       
+              ";
+            // line 5
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "session", array()), "flashBag", array()), "get", array(0 => "success"), "method"));
+            foreach ($context['_seq'] as $context["_key"] => $context["msg"]) {
+                // line 6
+                echo "                <div class=\"alert alert-success\">
+                    ";
+                // line 7
+                echo twig_escape_filter($this->env, $context["msg"], "html", null, true);
+                echo "
+                </div>
+                ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['msg'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 9
+            echo "       
+    ";
+        }
+        // line 11
+        echo "<table border=\"1\">
     <tr>
         <th>Id</th>
         <th>Nom</th>
         <th>Cognom</th>
         <th>Correo</th>
-        <th>Editar</th>
+        <th>Editar</th>   
         <th>Eliminar</th>
     </tr>
-    ";
-        // line 11
+     ";
+        // line 20
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["users"] ?? $this->getContext($context, "users")));
         foreach ($context['_seq'] as $context["_key"] => $context["user"]) {
-            // line 12
+            // line 21
             echo "    <tr>
         <td>";
-            // line 13
+            // line 22
             echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "id", array()), "html", null, true);
             echo "</td>
         <td>";
-            // line 14
+            // line 23
             echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "nom", array()), "html", null, true);
             echo "</td>
         <td>";
-            // line 15
+            // line 24
             echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "cognom", array()), "html", null, true);
             echo "</td>
         <td>";
-            // line 16
+            // line 25
             echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "correo", array()), "html", null, true);
-            echo "</td>
-        <td><button class=\"btn btn-primary\">Eliminar</button></td>
-        <td><button class=\"btn btn-danger\">Editar</button></td>
+            echo "</td>        
+        <td><button>Editar</button></td>
+        <td>
+            <a href=\"delete-user/";
+            // line 28
+            echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "id", array()), "html", null, true);
+            echo "\"><button>Eliminar</button></a>
+        </td>
     </tr>
+ 
+
     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['user'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 21
-        echo "</table>";
+        // line 34
+        echo "</table>
+
+";
         
-        $__internal_471da0e16484b3948082c3efff3206fe6c58d18dbe8a8d9aa6007a52b0ea434e->leave($__internal_471da0e16484b3948082c3efff3206fe6c58d18dbe8a8d9aa6007a52b0ea434e_prof);
+        $__internal_cefff9f3ae7f8008ed3e53484832c06f6c99163aae8f00cbb89d47bbdee87452->leave($__internal_cefff9f3ae7f8008ed3e53484832c06f6c99163aae8f00cbb89d47bbdee87452_prof);
 
         
-        $__internal_d9c14b8c2187ddf2eac02e8745995b91c18368e05a9a482939ba3705341c35d4->leave($__internal_d9c14b8c2187ddf2eac02e8745995b91c18368e05a9a482939ba3705341c35d4_prof);
+        $__internal_0b3cc21c43f01573fe2f027d06acfcb9f9043d29087dabac86880350062341b1->leave($__internal_0b3cc21c43f01573fe2f027d06acfcb9f9043d29087dabac86880350062341b1_prof);
 
     }
 
@@ -85,7 +144,7 @@ class __TwigTemplate_55ff9f856279ece5ff4a7164b767a388b58dfa9c245d2787ca28d1100e4
 
     public function getDebugInfo()
     {
-        return array (  67 => 21,  56 => 16,  52 => 15,  48 => 14,  44 => 13,  41 => 12,  37 => 11,  25 => 1,);
+        return array (  124 => 34,  112 => 28,  106 => 25,  102 => 24,  98 => 23,  94 => 22,  91 => 21,  87 => 20,  76 => 11,  72 => 9,  63 => 7,  60 => 6,  56 => 5,  52 => 4,  49 => 3,  40 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -98,26 +157,41 @@ class __TwigTemplate_55ff9f856279ece5ff4a7164b767a388b58dfa9c245d2787ca28d1100e4
 
     public function getSourceContext()
     {
-        return new Twig_Source("<h1>Listado de Usuarios</h1>
+        return new Twig_Source("{% extends \"base.html.twig\" %}
+{% block content %}
+<h1>Listado de Usuarios</h1>
+    {% if app.session.flashBag.has('success') %}       
+              {% for msg in app.session.flashBag.get('success') %}
+                <div class=\"alert alert-success\">
+                    {{ msg }}
+                </div>
+                {% endfor %}       
+    {% endif %}
 <table border=\"1\">
     <tr>
         <th>Id</th>
         <th>Nom</th>
         <th>Cognom</th>
         <th>Correo</th>
-        <th>Editar</th>
+        <th>Editar</th>   
         <th>Eliminar</th>
     </tr>
-    {% for user in users %}
+     {% for user in users %}
     <tr>
         <td>{{ user.id }}</td>
         <td>{{ user.nom }}</td>
         <td>{{ user.cognom }}</td>
-        <td>{{ user.correo }}</td>
-        <td><button class=\"btn btn-primary\">Eliminar</button></td>
-        <td><button class=\"btn btn-danger\">Editar</button></td>
+        <td>{{ user.correo }}</td>        
+        <td><button>Editar</button></td>
+        <td>
+            <a href=\"delete-user/{{ user.id }}\"><button>Eliminar</button></a>
+        </td>
     </tr>
+ 
+
     {% endfor %}
-</table>", "VallbonaWebBundle:lista:listaUsuarios.html.twig", "/opt/lampp/htdocs/symfony_m14/src/Vallbona/WebBundle/Resources/views/lista/listaUsuarios.html.twig");
+</table>
+
+{% endblock %}", "VallbonaWebBundle:lista:listaUsuarios.html.twig", "/opt/lampp/htdocs/symfony_m14/src/Vallbona/WebBundle/Resources/views/lista/listaUsuarios.html.twig");
     }
 }

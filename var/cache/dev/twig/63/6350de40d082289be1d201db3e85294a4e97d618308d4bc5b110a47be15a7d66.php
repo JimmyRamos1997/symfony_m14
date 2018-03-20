@@ -15,11 +15,11 @@ class __TwigTemplate_f345fe3fab70367c1ce4f033043ed4acdd694926dfeede35bb4ab1488ab
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_101ad03eea1be528a5a1df0bda0b617f995d473183936459266e524a2d60f581 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_101ad03eea1be528a5a1df0bda0b617f995d473183936459266e524a2d60f581->enter($__internal_101ad03eea1be528a5a1df0bda0b617f995d473183936459266e524a2d60f581_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:lista:listaSubtasques.html.twig"));
+        $__internal_e954daaaee10911f722291bc81330406ce97377da33629600d1e597fa6aef5ed = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_e954daaaee10911f722291bc81330406ce97377da33629600d1e597fa6aef5ed->enter($__internal_e954daaaee10911f722291bc81330406ce97377da33629600d1e597fa6aef5ed_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:lista:listaSubtasques.html.twig"));
 
-        $__internal_3c2dd6521c45a75a20b180bd2352c4b18677dd9cfd2cc0acd04f6fa91613809a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3c2dd6521c45a75a20b180bd2352c4b18677dd9cfd2cc0acd04f6fa91613809a->enter($__internal_3c2dd6521c45a75a20b180bd2352c4b18677dd9cfd2cc0acd04f6fa91613809a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:lista:listaSubtasques.html.twig"));
+        $__internal_4fbbf9326564f932e3f130ba51b0739f680120deff05aae04f171c4bd8b8c106 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4fbbf9326564f932e3f130ba51b0739f680120deff05aae04f171c4bd8b8c106->enter($__internal_4fbbf9326564f932e3f130ba51b0739f680120deff05aae04f171c4bd8b8c106_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "VallbonaWebBundle:lista:listaSubtasques.html.twig"));
 
         // line 1
         echo "<h1>Listado de Subtasques</h1>
@@ -31,41 +31,47 @@ class __TwigTemplate_f345fe3fab70367c1ce4f033043ed4acdd694926dfeede35bb4ab1488ab
         <th>Data d'inici</th>
         <th>Data de finalització</th>
         <th>Tasca-Referencia</th>
-        <th>Editar</th>
         <th>Eliminar</th>
+        <th>Editar</th>
+        
     </tr>
     ";
-        // line 13
+        // line 14
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["subtasques"] ?? $this->getContext($context, "subtasques")));
         foreach ($context['_seq'] as $context["_key"] => $context["subtasca"]) {
-            // line 14
+            // line 15
             echo "    <tr>
         <td>";
-            // line 15
+            // line 16
             echo twig_escape_filter($this->env, $this->getAttribute($context["subtasca"], "id", array()), "html", null, true);
             echo "</td>
         <td>";
-            // line 16
+            // line 17
             echo twig_escape_filter($this->env, $this->getAttribute($context["subtasca"], "nom", array()), "html", null, true);
             echo "</td>
         <td>";
-            // line 17
+            // line 18
             echo twig_escape_filter($this->env, $this->getAttribute($context["subtasca"], "descripcio", array()), "html", null, true);
             echo "</td>
         <td>";
-            // line 18
+            // line 19
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["subtasca"], "dataInici", array()), "d-m-Y"), "html", null, true);
             echo "</td>
         <td>";
-            // line 19
+            // line 20
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["subtasca"], "dataFinal", array()), "d-m-Y"), "html", null, true);
             echo "</td>
         <td>";
-            // line 20
+            // line 21
             echo twig_escape_filter($this->env, $this->getAttribute($context["subtasca"], "idTasca", array()), "html", null, true);
             echo "</td>
-        <td><button class=\"btn btn-primary\">Eliminar</button></td>
+        <td>
+            <a href=\"delete-subtasca/";
+            // line 23
+            echo twig_escape_filter($this->env, $this->getAttribute($context["subtasca"], "id", array()), "html", null, true);
+            echo "\"><button>Eliminar</button></a>
+        </td>
         <td><button class=\"btn btn-danger\">Editar</button></td>
     </tr>
     ";
@@ -73,13 +79,13 @@ class __TwigTemplate_f345fe3fab70367c1ce4f033043ed4acdd694926dfeede35bb4ab1488ab
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['subtasca'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 25
+        // line 28
         echo "</table>";
         
-        $__internal_101ad03eea1be528a5a1df0bda0b617f995d473183936459266e524a2d60f581->leave($__internal_101ad03eea1be528a5a1df0bda0b617f995d473183936459266e524a2d60f581_prof);
+        $__internal_e954daaaee10911f722291bc81330406ce97377da33629600d1e597fa6aef5ed->leave($__internal_e954daaaee10911f722291bc81330406ce97377da33629600d1e597fa6aef5ed_prof);
 
         
-        $__internal_3c2dd6521c45a75a20b180bd2352c4b18677dd9cfd2cc0acd04f6fa91613809a->leave($__internal_3c2dd6521c45a75a20b180bd2352c4b18677dd9cfd2cc0acd04f6fa91613809a_prof);
+        $__internal_4fbbf9326564f932e3f130ba51b0739f680120deff05aae04f171c4bd8b8c106->leave($__internal_4fbbf9326564f932e3f130ba51b0739f680120deff05aae04f171c4bd8b8c106_prof);
 
     }
 
@@ -95,7 +101,7 @@ class __TwigTemplate_f345fe3fab70367c1ce4f033043ed4acdd694926dfeede35bb4ab1488ab
 
     public function getDebugInfo()
     {
-        return array (  77 => 25,  66 => 20,  62 => 19,  58 => 18,  54 => 17,  50 => 16,  46 => 15,  43 => 14,  39 => 13,  25 => 1,);
+        return array (  83 => 28,  72 => 23,  67 => 21,  63 => 20,  59 => 19,  55 => 18,  51 => 17,  47 => 16,  44 => 15,  40 => 14,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -117,8 +123,9 @@ class __TwigTemplate_f345fe3fab70367c1ce4f033043ed4acdd694926dfeede35bb4ab1488ab
         <th>Data d'inici</th>
         <th>Data de finalització</th>
         <th>Tasca-Referencia</th>
-        <th>Editar</th>
         <th>Eliminar</th>
+        <th>Editar</th>
+        
     </tr>
     {% for subtasca in subtasques %}
     <tr>
@@ -128,7 +135,9 @@ class __TwigTemplate_f345fe3fab70367c1ce4f033043ed4acdd694926dfeede35bb4ab1488ab
         <td>{{ subtasca.dataInici | date('d-m-Y')}}</td>
         <td>{{ subtasca.dataFinal | date('d-m-Y') }}</td>
         <td>{{ subtasca.idTasca }}</td>
-        <td><button class=\"btn btn-primary\">Eliminar</button></td>
+        <td>
+            <a href=\"delete-subtasca/{{subtasca.id}}\"><button>Eliminar</button></a>
+        </td>
         <td><button class=\"btn btn-danger\">Editar</button></td>
     </tr>
     {% endfor %}

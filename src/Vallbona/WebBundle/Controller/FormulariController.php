@@ -33,8 +33,7 @@ class FormulariController extends Controller
         }else{
             $status = null;
             $data = null;
-        }
-
+        } 
         return $this->render('VallbonaWebBundle:form:create.html.twig', array( 
           'titol' => $titol, 
           'form' =>$form->createView(),
@@ -47,5 +46,24 @@ class FormulariController extends Controller
         return $this->render('VallbonaWebBundle:lista:listaUsuarios.html.twig', array('users' => $users));
 
     }
+
+    public function eliminarAction($id)
+    { 
+       $em = $this->getDoctrine()->getManager();
+       $guest = $em->getRepository('VallbonaWebBundle:Usuari')->find($id);
+       if (!$guest) {
+        throw $this->createNotFoundException('Usuario no encontrado con esta id: '.$id);
+    }
+    else {
+        $this->addFlash('success', 'Usuario eliminado correctamente!');
+    }
+    $em->remove($guest);
+    $em->flush();
+    return $this->redirectToRoute('vallbona_web_listarUser');
+        
+}
+
+
+
 
 }

@@ -33,3 +33,10 @@ vallbona_web_listarSubtasca:
 vallbona_web_listarTasca: 
     path:     /tasques-listar
     defaults: { _controller: VallbonaWebBundle:FormulariTasca:listar }
+
+vallbona_web_eliminarUser: 
+    path:     /delete-user/{id}
+    defaults: { _controller: VallbonaWebBundle:Formulari:eliminar }
+vallbona_web_eliminarSubtasca: 
+    path:     /delete-subtasca/{id}
+    defaults: { _controller: VallbonaWebBundle:FormulariSubtasca:eliminar }

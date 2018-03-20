@@ -43,9 +43,23 @@ class FormulariSubtascaController extends Controller
 
  public function listarAction()
     {
-        $subtasques = $this->getDoctrine()->getRepository('VallbonaWebBundle:Subtasca')->findAll(); 
+        $subtasques = $this->getDoctrine()->getRepository('VallbonaWebBundle:Subtasca')->findAll();
         return $this->render('VallbonaWebBundle:lista:listaSubtasques.html.twig', array('subtasques' => $subtasques));
 
     }
+
+  public function eliminarAction($id)
+    { 
+       $em = $this->getDoctrine()->getManager();
+       $guest = $em->getRepository('VallbonaWebBundle:Subtasca')->find($id);
+       if (!$guest) {
+        throw $this->createNotFoundException('subtasca no encontrada con esta id: '.$id);
+    }
+    $em->remove($guest);
+    $em->flush();
+    return $this->redirectToRoute('vallbona_web_listarSubtasca');
+    
+}
+
 
 }
