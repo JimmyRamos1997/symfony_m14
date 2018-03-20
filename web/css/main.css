@@ -61,15 +61,20 @@ background-size: cover;
   0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
+.llistar {
+  max-width: 70% !important;
+  margin-top: 2%;
+}
+
 .menuinici {
   background-color: white;
   background-color: #ffffff;
   border-radius: 75px;
-  max-width: 25%;
   padding-bottom: 5%;
   opacity: 0.9;
   padding-right: 0px;
   padding-left: 0px;
+  text-align: center;
 }
 
 .btn-primary {
@@ -92,4 +97,38 @@ background-size: cover;
 }
 .butonsmenu {
   margin-top: 15%;
+}
+form {
+  text-align: center;
+}
+
+.createtasca {
+  margin-top: 5%;
+  max-width: 30%;
+}
+.data {
+  background-color: #2F2F2F;
+  color: white;
+  padding-top: 1%;
+}
+
+.centrartaula {
+  width: 100%;
+  text-align: center;
+}
+.centrartaula table{
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr:nth-child(even){background-color: #DFE1DF}
+
+.fa-edit {
+  color: #33B02C;
+  cursor: pointer;
+}
+.fa-trash-alt {
+  color: #D72525;
+  cursor: pointer;
 }

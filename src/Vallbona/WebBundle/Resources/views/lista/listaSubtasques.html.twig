@@ -1,5 +1,12 @@
-<h1>Listado de Subtasques</h1>
-<table border="1">
+{% extends "menu.html.twig" %}
+
+
+{% block content %}
+{{ parent() }}
+        <div class="container menuinici letra-default llistar">
+            <h4 class="letra-default titlemenu">Llistat de Subtasques</h4>
+            <div class="centrartaula">
+<table>
     <tr>
         <th>Id</th>
         <th>Nom</th>
@@ -18,11 +25,14 @@
         <td>{{ subtasca.descripcio }}</td>
         <td>{{ subtasca.dataInici | date('d-m-Y')}}</td>
         <td>{{ subtasca.dataFinal | date('d-m-Y') }}</td>
-        <td>{{ subtasca.idTasca }}</td>
+        <td>{{ subtasca.idTasca }}</td>        
+        <td><i class="fas fa-edit"></td>
         <td>
-            <a href="delete-subtasca/{{subtasca.id}}"><button>Eliminar</button></a>
+            <a href="delete-subtasca/{{subtasca.id}}"><i class="fas fa-trash-alt"></i></a>
         </td>
-        <td><button class="btn btn-danger">Editar</button></td>
     </tr>
     {% endfor %}
 </table>
+</div>
+</div>
+{% endblock %}

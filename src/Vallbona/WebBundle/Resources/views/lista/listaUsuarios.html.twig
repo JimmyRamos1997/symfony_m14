@@ -1,36 +1,44 @@
-{% extends "base.html.twig" %}
+{% extends "menu.html.twig" %}
+
+{% block title %}Llistar Usuaris{% endblock %}
+
 {% block content %}
-<h1>Listado de Usuarios</h1>
-    {% if app.session.flashBag.has('success') %}       
+    {{ parent() }}
+    <div class="container menuinici letra-default llistar">
+        <h4 class="letra-default titlemenu">Llistat de Usuaris</h4>
+        <div class="centrartaula">
+            {% if app.session.flashBag.has('success') %}       
               {% for msg in app.session.flashBag.get('success') %}
                 <div class="alert alert-success">
                     {{ msg }}
                 </div>
-                {% endfor %}       
-    {% endif %}
-<table border="1">
-    <tr>
-        <th>Id</th>
-        <th>Nom</th>
-        <th>Cognom</th>
-        <th>Correo</th>
-        <th>Editar</th>   
-        <th>Eliminar</th>
-    </tr>
-     {% for user in users %}
-    <tr>
-        <td>{{ user.id }}</td>
-        <td>{{ user.nom }}</td>
-        <td>{{ user.cognom }}</td>
-        <td>{{ user.correo }}</td>        
-        <td><button>Editar</button></td>
-        <td>
-            <a href="delete-user/{{ user.id }}"><button>Eliminar</button></a>
-        </td>
-    </tr>
- 
+            {% endfor %}       
+        {% endif %}
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Cognom</th>
+                <th>Correo</th>
+                <th>Editar</th>   
+                <th>Eliminar</th>
+            </tr>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.nom }}</td>
+                    <td>{{ user.cognom }}</td>
+                    <td>{{ user.correo }}</td>        
+                    <td><button>Editar</button></td>
+                    <td>
+                        <a href="delete-user/{{ user.id }}"><button>Eliminar</button></a>
+                    </td>
+                </tr>
 
-    {% endfor %}
-</table>
+
+            {% endfor %}
+        </table>
+    </div>
+</div>
 
 {% endblock %}

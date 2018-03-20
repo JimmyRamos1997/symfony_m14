@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+{% block head %}
+	{{ parent() }}
+	<link rel="stylesheet" href="{{ asset('css/menu.css') }}" />
+    {% endblock %}
+
+{% block content %}
+
+	<ul class="menu">
+		<li><a href="{{ path('vallbona_web_homepage') }}"><i class="fas fa-home"></i> Inici</a></li>
+		<li><a href="{{ path('vallbona_web_listarTasca') }}"><i class="fas fa-tasks"></i> Taques </a></li>
+		<li><a href="{{ path('vallbona_web_listarSubtasca') }}"><i class="fas fa-code-branch"></i> Subtasca </a></li>
+		<li><a href="{{ path('vallbona_web_listarUser') }}"><i class="fas fa-user"></i> Usuaris </a></li>
+	</ul>
+
+{% endblock %}

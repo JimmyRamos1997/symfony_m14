@@ -1099,3 +1099,14 @@ cae0ce,127.0.0.1,GET,http://localhost/symfony_m14/web/app_dev.php/users-listar,1
 9065ce,127.0.0.1,GET,http://localhost/symfony_m14/web/app_dev.php/create-user,1521561883,,200
 233622,127.0.0.1,GET,http://localhost/symfony_m14/web/app_dev.php/create-user,1521561931,,200
 cdb4ed,127.0.0.1,GET,http://localhost/symfony_m14/web/app_dev.php/create-user,1521561932,,200
+a9a88c,127.0.0.1,GET,http://localhost/symfony_m14/web/app_dev.php/subtasques-listar,1521562689,,200
+785ae5,127.0.0.1,GET,http://localhost/symfony_m14/web/app_dev.php/subtasques-listar,1521562804,10dfc4,200
+10dfc4,127.0.0.1,GET,http://localhost/symfony_m14/web/app_dev.php/subtasques-listar,1521562804,,500
+4514f9,127.0.0.1,GET,http://localhost/symfony_m14/web/app_dev.php/subtasques-listar,1521562841,,200
+16f749,127.0.0.1,GET,http://localhost/symfony_m14/web/app_dev.php/subtasques-listar,1521562925,,200
+641b96,127.0.0.1,GET,http://localhost/symfony_m14/web/app_dev.php/subtasques-listar,1521562979,,200
+8d1cb6,127.0.0.1,GET,http://localhost/symfony_m14/web/app_dev.php/subtasques-listar,1521563034,,200
+2551a7,127.0.0.1,GET,http://localhost/symfony_m14/web/app_dev.php/users-listar,1521563040,,200
+4497f2,127.0.0.1,GET,http://localhost/symfony_m14/web/app_dev.php/subtasques-listar,1521563042,,200
+b080e7,127.0.0.1,GET,http://localhost/symfony_m14/web/app_dev.php/tasques-listar,1521563042,,200
+83272d,127.0.0.1,GET,http://localhost/symfony_m14/web/app_dev.php/users-listar,1521563047,,200
